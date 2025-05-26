@@ -1,0 +1,221 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #f4f4f4;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    color: #005a9c; /* A nice blue for AC company */
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Section Padding */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #005a9c;
+}
+
+/* Hero Section */
+#hero {
+    background: #007bff; /* Primary blue */
+    color: white;
+    padding: 40px 20px;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#cta-button {
+    background: #ffc107; /* Bright yellow for CTA */
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cta-button:hover {
+    background: #e0a800;
+}
+
+/* Services Section */
+.services-container {
+    display: flex; /* Basic flexbox for layout */
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.service-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33% - 40px); /* Adjust for margin and padding */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* About Us Section */
+#about-us {
+    background: #e9ecef;
+}
+
+/* Testimonials Section */
+.testimonial-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.testimonial-item p:last-child {
+    font-style: normal;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    background: #f4f4f4;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+#contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer .social-media-links {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller desktops */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block; /* Stack nav items */
+        margin-bottom: 10px;
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack service items */
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%; /* Wider items for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 90%; /* Adjust form input width */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    #hero h2 {
+        font-size: 2rem; /* Adjust hero headline size */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Adjust hero paragraph size */
+    }
+
+    .service-item {
+        width: 95%; /* Even wider for very small screens */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Adjust header title size */
+    }
+}
